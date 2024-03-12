@@ -7,8 +7,12 @@
 npm i
 ```
 
-
+2. 開始使用
 ```bash
 npm start
 ```
 
+3. 使用十萬伏特
+```bash
+npm pikappika!
+```

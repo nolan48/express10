@@ -1,8 +1,14 @@
-import express from "express";
-import {resolve} from "path";
-const __dirname = import.meta.dirname;
+const express = require("express");
+const {resolve} = require("path");
+
+
+// require static file support
+// const static = require('express-static');
+// app.use(static(resolve(__dirname, 'public')));
 
 const app = express();
+
+
 app.use(express.static(resolve(__dirname, "public")));
 app.use("/bootstrap", express.static(resolve(__dirname, "node_modules/bootstrap/dist")));
 app.use("/jquery", express.static(resolve(__dirname, "node_modules/jquery/dist")))
